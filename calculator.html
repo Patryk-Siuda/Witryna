@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kebab_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Kebab Station</title>
+</head>
+<body>
+    <div class="banner">
+    
+    <div class="nav-bar">
+        <a href="index.html" class="main-page"><img class="logo_kebab" src="kebab.png" alt="Logo_kebab"></a>
+            <ul>
+            <li><a href="calculator.html">KALKULATOR</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="contact.html">KONTAKT</a></li>
+            <li><a href="about.html">O NAS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-calc">
+        <div class="calc-box">
+        <h1>Wybierz rodzaj i wielkość pizzy</h1>
+        <br><br>
+        <input type="text" id="a" class="calc-input" placeholder="Podaj ilość"><br><br>
+        <h3> Jaką chcesz pizze </h3>
+	        <select id="wybor" class="select-box">
+	        <option value="p1">Kebab bułka (27zł)</option>
+	        <option value="p2">Kebab pita (25zł)</option>
+	        <option value="p3">Kebab rollo (23zł)</option>
+	        <option value="p4">Kebab talerz (41zł)</option>
+	        </select>
+            <br><br><br><br><br><br>
+	    <h3> Jaka wielkość </h3>
+	        <select id="wybor2" class="select-box">
+	        <option value="w1">Mały</option>
+	        <option value="w2">Średni +7zł</option>
+	        <option value="w3">Duży (+10zł)</option>
+	        </select>
+            <br><br><br><br><br>
+	    <input type="checkbox" id="tak">Dodatkowy sos +5zł<br><br><br>
+	    <button onClick="pizza()" class="calc-button"> OBLICZ</button>
+        <br><br>
+        <p id="wynik" class="calc-result"></p>
+    </div>    
+    </div>
+</body>
+</html>
