@@ -12,9 +12,9 @@
     <title>Kebab Station</title>
 </head>
 <body>
-    <div class="banner">
+    <div class="banner" role="banner">
     
-    <div class="nav-bar">
+    <div class="nav-bar" role="nav-bar">
         <a href="index.html" class="main-page"><img class="logo_kebab" src="kebab.png" alt="Logo_kebab"></a>
             <ul>
             <li><a href="calculator.html">KALKULATOR</a></li>
@@ -24,12 +24,14 @@
             </ul>
         </div>
     </div>
-    <div class="content-calc">
+    <div class="content-calc" role="content-calc">
         <div class="calc-box">
-        <h1>Wybierz rodzaj i wielkość pizzy</h1>
+        <h1>Wybierz rodzaj i wielkość kebaba</h1>
         <br><br>
-        <input type="text" id="a" class="calc-input" placeholder="Podaj ilość"><br><br>
-        <h3> Jaką chcesz pizze </h3>
+        <label for="ilosc" class="sr-only">Podaj ilość</label>
+        <input type="text" id="ilosc" class="calc-input" placeholder="Podaj ilość"><br><br>
+        <h2> Jakiego chcesz kebaba? </h2>
+        <label for="wybor" class="sr-only">Rodzaj kebaba</label>
 	        <select id="wybor" class="select-box">
 	        <option value="p1">Kebab bułka (27zł)</option>
 	        <option value="p2">Kebab pita (25zł)</option>
@@ -38,12 +40,14 @@
 	        </select>
             <br><br><br><br><br><br>
 	    <h3> Jaka wielkość </h3>
+        <label for="wybor2" class="sr-only">Wybierz rozmiar</label>
 	        <select id="wybor2" class="select-box">
 	        <option value="w1">Mały</option>
 	        <option value="w2">Średni +7zł</option>
 	        <option value="w3">Duży (+10zł)</option>
 	        </select>
             <br><br><br><br><br>
+            <label for="tak" class="sr-only">Dodatkowy sos +5zl</label>
 	    <input type="checkbox" id="tak">Dodatkowy sos +5zł<br><br><br>
 	    <button onClick="pizza()" class="calc-button"> OBLICZ</button>
         <br><br>

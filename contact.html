@@ -11,9 +11,9 @@
     <title>Kebab Station</title>
 </head>
 <body>
-    <div class="banner">
+    <div class="banner" role="banner">
     
-    <div class="nav-bar">
+    <div class="nav-bar" role="nav-bar">
         <a href="index.html" class="main-page"><img class="logo_kebab" src="kebab.png" alt="Logo_kebab"></a>
             <ul>
             <li><a href="calculator.html">KALKULATOR</a></li>
@@ -24,17 +24,19 @@
         </div>
         </div>
 
-            <div class="contact-content">
+            <div class="contact-content" role="contact-content">
                 <h1>Skontaktuj się z nami !</h1>
             </div>
-            <div class="contact-form">
-                <p>Podaj imię i nazwisko: </p><input type="text" class="contact-input" placeholder="np. Jan Kowalski">
-                <p>Podaj e-mail: </p><input type="text" class="contact-input" placeholder="jankowalski@gmail.com"><br>
+            <div class="contact-form" role="contact-form">
+                <label for="imie" class="sr-only">Podaj imię i nazwisko</label>
+                <p>Podaj imię i nazwisko: </p><input type="text" id="imie" class="contact-input" placeholder="np. Jan Kowalski">
+                <label for="mail" class="sr-only">Podaj adres e-mail</label>
+                <p>Podaj e-mail: </p><input type="text" id="mail" class="contact-input" placeholder="jankowalski@gmail.com"><br>
                 <textarea name="" id="" cols="70" rows="5" placeholder="Wpisz wiadomość" class="contact-area"></textarea><br>
                 <button type="submit" class="contact-button">WYŚLIJ</button><br>
                 <hr class="contact-hr">
                 <h2 class="contact-contact">Lub zadzwoń</h2>
-                <p class="contact-number">+48 123 848 777</p>
+                <h3 class="contact-number">+48 123 848 777</h3>
             </div>
 </body>
 </html>
